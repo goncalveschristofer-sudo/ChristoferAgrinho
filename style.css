@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #f4f7f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  background: #1b5e20;
+  color: white;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  background: url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  background: rgba(0,0,0,0.55);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  background: #2e7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* SEÇÕES */
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 1rem;
+  text-align: justify;
+}
+
+/* CARROSSEL */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2rem;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.slide p {
+  padding: 1rem;
+}
+
+/* FAQ */
+.faq-item button {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-item p {
+  display: none;
+  padding: 1rem;
+  background: white;
+}
+
+/* QUIZ */
+.quiz-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.quiz-box {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.quiz-option {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+.correct { background: #2e7d32; color: white; }
+.wrong { background: #c62828; color: white; }
+
+/* IA */
+.ia-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.ia-button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background: #2e7d32;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.ia-chat {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 300px;
+  height: 400px;
+  background: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hidden { display: none; }
+
+.ia-header {
+  background: #1b5e20;
+  color: white;
+  padding: 1rem;
+}
+
+.ia-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.msg {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.bot { background: #e0e0e0; }
+.user { background: #2e7d32; color: white; }
+
+.ia-input-area {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.ia-input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+}
+
+.ia-input-area button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px;
+}

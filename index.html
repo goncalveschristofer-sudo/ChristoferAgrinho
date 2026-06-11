@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agro Forte 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo">🌱 Agro Forte</h1>
+
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#cards">Tecnologias</a>
+      <a href="#impactos">Impactos</a>
+      <a href="#faq">FAQ</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Agro forte, futuro sustentável</h2>
+
+    <p>
+      O agronegócio moderno combina tecnologia, ciência e sustentabilidade para produzir mais alimentos
+      com menos impacto ambiental, garantindo equilíbrio entre natureza e produção.
+    </p>
+
+    <a href="#cards" class="btn">Explorar</a>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <h2>Sobre o Agro Sustentável</h2>
+
+  <p>
+    O agro sustentável busca aumentar a produção agrícola sem destruir os recursos naturais.
+    Ele utiliza tecnologia, ciência e gestão inteligente para manter o equilíbrio ambiental.
+  </p>
+
+  <p>
+    Esse modelo garante alimento para a população e preservação do planeta ao mesmo tempo.
+  </p>
+</section>
+
+<section id="cards" class="cards">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" />
+    <h3>Solo Saudável</h3>
+    <p>Práticas como rotação de culturas mantêm a fertilidade do solo.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" />
+    <h3>Água Inteligente</h3>
+    <p>Irrigação automatizada reduz desperdícios e melhora eficiência.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" />
+    <h3>Energia Limpa</h3>
+    <p>Energia solar reduz impactos ambientais no campo.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30" />
+    <h3>Tecnologia</h3>
+    <p>Drones e sensores ajudam na produção agrícola moderna.</p>
+  </div>
+
+</section>
+
+<section id="impactos" class="carousel-section">
+  <h2>Impactos Positivos</h2>
+
+  <div class="carousel">
+    <button class="prev">◀</button>
+
+    <div class="carousel-track-container">
+      <div class="carousel-track" id="track">
+
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" />
+          <h3>Recuperação do Solo</h3>
+          <p>Melhora da fertilidade com práticas sustentáveis.</p>
+        </div>
+
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" />
+          <h3>Uso da Água</h3>
+          <p>Uso inteligente evita desperdícios e preserva recursos naturais.</p>
+        </div>
+
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" />
+          <h3>Energia Sustentável</h3>
+          <p>Reduz poluição e melhora o futuro ambiental.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="next">▶</button>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <h2>Perguntas Frequentes</h2>
+
+  <div class="faq">
+    <div class="faq-item">
+      <button>O que é agro sustentável?</button>
+      <p>É produção agrícola que respeita o meio ambiente e usa tecnologia para eficiência.</p>
+    </div>
+
+    <div class="faq-item">
+      <button>Por que é importante?</button>
+      <p>Porque garante alimento sem destruir recursos naturais.</p>
+    </div>
+
+    <div class="faq-item">
+      <button>Como a tecnologia ajuda?</button>
+      <p>Ela aumenta produtividade e reduz desperdícios no campo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="quiz-section">
+
+  <h2>🌱 Quiz do Agro Sustentável</h2>
+
+  <div class="quiz-box">
+
+    <p id="quiz-question"></p>
+
+    <div id="quiz-options"></div>
+
+    <p id="quiz-feedback"></p>
+
+    <button id="next-question">Próxima</button>
+
+    <p id="quiz-score">Pontuação: 0</p>
+
+  </div>
+
+</section>
+
+<!-- IA FAZENDEIRO 🤠 -->
+<div class="ia-container">
+
+  <button id="ia-toggle" class="ia-button">🤠</button>
+
+  <div id="ia-chat" class="ia-chat hidden">
+
+    <div class="ia-header">🤠 Fazendeiro IA</div>
+
+    <div id="ia-messages" class="ia-messages">
+      <div class="msg bot">
+        Oi! Sou o Fazendeiro IA 🌱 Pergunte sobre agro, água, solo, tecnologia ou meio ambiente.
+      </div>
+    </div>
+
+    <div class="ia-input-area">
+      <input id="ia-input" placeholder="Digite sua pergunta..." />
+      <button id="ia-send">Enviar</button>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>🌱 Agro Forte 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
